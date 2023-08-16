@@ -1,0 +1,46 @@
+.img-lg {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.card-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: rgba(180, 142, 180, 0.968);
+}
+
+.navbar {
+  background-color: lavender;
+}
+
+.cardbackground {
+  background-color: rgba(180, 142, 180, 0.968);
+}
+
+.account {
+  padding-top: 3%;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+.deposit,
+.withdraw {
+  margin: 3% auto;
+}
+
+.deposit-body,
+.withdraw-body {
+  background-color: rgba(180, 142, 180, 0.968);
+}
+
+.submit-deposit,
+.submit-withdraw {
+  margin-top: 3%;
+}
+
+.titlebank {
+  font-size: xx-large;
+  font-weight: bold;
+}

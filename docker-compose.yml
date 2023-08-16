@@ -1,0 +1,26 @@
+services:
+  datastore:
+    image: mongo
+    ports:
+      - "27017:27017"
+    restart: always
+
+  api:
+    image: api
+    build: .
+    ports:
+      - "4000:4000"
+    links:
+      - datastore
+    depends_on:
+      - datastore
+
+  frontendfinal:
+    image: frontendfinal
+    build: . 
+    ports:
+      - "3000:3000"
+    links:
+      - api
+    depends_on:
+      - api 
