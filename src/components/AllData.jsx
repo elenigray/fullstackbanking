@@ -6,7 +6,7 @@ function AllData() {
     const [users, setUsers] = useState([]);
     useEffect(() => {
        const allData = async () => {
-        let res = await axios.get("http://localhost:4000/alldata")
+        let res = await axios.get("https://elenigrayexpressserver-a99ad020f881.herokuapp.com/alldata")
         setUsers(res.data);
        }
     allData();
