@@ -23,7 +23,7 @@ function CreateAccount() {
     if (!validate(name, "name")) return;
     if (!validate(email, "email")) return;
     if (!validate(password, "password")) return;
-    await axios.post("http://localhost:4000/create-account/", {
+    await axios.post("https://elenigrayexpressserver-a99ad020f881.herokuapp.com/create-account/", {
       name,
       email,
       password,

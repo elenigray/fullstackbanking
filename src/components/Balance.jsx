@@ -7,7 +7,7 @@ function Balance() {
     const [user, setUser] = React.useState();
     React.useEffect(() => {
         const fetchUser = async () => {
-            const res = await axios.get("http://localhost:4000/user/" + localStorage.getItem("email"))
+            const res = await axios.get("https://elenigrayexpressserver-a99ad020f881.herokuapp.com/user/" + localStorage.getItem("email"))
             setUser({...res.data});
             console.log(res);
             console.log(user);

@@ -14,7 +14,7 @@ function Withdraw() {
             {
                 return
             }
-            const res = await axios.get("http://localhost:4000/user/" + localStorage.getItem("email"))
+            const res = await axios.get("https://elenigrayexpressserver-a99ad020f881.herokuapp.com/user/" + localStorage.getItem("email"))
             console.log(email);
             setUser(res.data);
             console.log(res.data);
@@ -50,7 +50,7 @@ function Withdraw() {
         alert('Account balance is insufficient for withdrawal.');
         return;
       }
-  await axios.put("http://localhost:4000/withdraw", {
+  await axios.put("https://elenigrayexpressserver-a99ad020f881.herokuapp.com/withdraw", {
     amount, email: user.email
   })
     //   ctx.user.history.push({
